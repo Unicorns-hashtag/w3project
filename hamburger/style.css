@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.hamburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 70px;
+    cursor: pointer;
+    height: 60px;
+}
+.bar{
+    height: 10px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}

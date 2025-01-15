@@ -1,6 +1,7 @@
 body{
     background-color: rgb(25, 50, 59);
 }
+
 #bar{
     display: flex;
     background-color: rgb(25, 50, 58);
@@ -8,17 +9,19 @@ body{
     font-size: 20px;
     list-style: none;
     color: white;
-    margin-top: 0%;
+    /* margin-top: 0%; */
     /* position: fixed; */
 }
 #bar2{
     display: flex;
     justify-content: space-between;
     background-color: rgb(27, 36, 63);
+    /* background-color: brown; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 1300px;
+    width: 1270px;
     list-style: none;
-    /* margin-top: 0%; */
+    position: fixed;
+    margin-top: 0%;
 }
 .h{
     margin-top: 0;
@@ -40,7 +43,7 @@ a{
 #iframe{
     height: 100vh;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 90px;
 }
 iframe{
     width: 100%;
@@ -54,12 +57,29 @@ iframe{
     top: 0;
     /* z-index: 1; */
 }
+#br{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    width: 100%;
+    left: 0;
+
+}
+#sr{
+    display: flex;
+    align-items: center;
+    /* background-color: blue; */
+    width: 20%;
+    /* justify-content:space-between ; */
+}
 .ht:hover{
     background-color: rgb(30, 80, 30);
 }
 .inp{
     border-radius:40px ;
     height: 40px;
+    margin-top: 0;
 }
 .sign{
     
@@ -68,16 +88,245 @@ iframe{
     list-style: none;
     border-radius: 30px;
     padding: 5px;
-    width: 100px;
+    width: 80px;
+    margin-right: 0;
 }
 .Log{
     background-color: white;
     color: black;
     border-radius: 30px;
     padding: 5px;
-    width: 100px;
+    width: 80px;
     list-style: none;
+    margin-left: 0;
 }
 .upbar:hover{
     background-color: darkslategrey;
 }
+
+/* media query */
+@media screen and (max-width:1324px) {
+    .dropdown button{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1302px) {
+    #bar{
+        font-size: 20px;
+    }
+    .inp{
+        height: 30px;
+    }
+
+    }
+@media screen and (max-width:1245px) {
+    /* #bar2{
+        width: 1100px;
+    } */
+    .Log{
+        width: 60px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    #bar{
+        font-size: 17px;
+    }
+    /* #bar2{
+        width: 1050px;
+    } */
+    .content h1{
+        font-size: 30px;
+    }
+    .ht{
+        font-size: 15px;
+    }
+    h1{
+        font-weight: normal;
+        font-size:2px;
+    }
+    .Log{
+        width: 55px;
+    }
+}
+@media screen and (max-width:1100px) {
+    /* #bar2{
+        width: 1000px;
+    } */
+    .Log{
+        width: 50px;
+    }
+}
+@media screen and (max-width:1052px) {
+    .sign{
+      width: 60px; 
+    }
+    
+}
+@media screen and (max-width:1016px) {
+    #bar2{
+        font-size: 13px;
+        /* width: 950px; */
+    }
+    #bar{
+        /* background-color: aqua; */
+        justify-content: space-between;
+        font-size:15px ;
+    }
+    /* .Log{
+        width: 70px;       
+    } */
+    /* .sign{
+        width: 70px;
+    } */
+     .ht{
+        font-size:15px;
+     }
+}
+@media screen and (max-width:962px) {
+    .s{
+        display: none;
+    }
+    #bar{
+        font-size: 13px;
+    }
+    /* #bar2{
+        width: 900px;
+    } */
+    .sign{
+        width: 50px;
+    }
+}
+@media screen and (max-width:926px) {
+    #bar2{
+        /* width: 850px; */
+        font-size: 11px;
+    }
+    #bar{
+        font-size: 15px;
+    }
+    .ht{
+        font-size: 13px;
+    }
+    .content h1{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:888px) {
+    .inp{
+        width: 100px;
+        /* background-color: pink; */
+    }
+    #sr{
+        /* background-color: aqua; */
+        width: 200px;    
+        margin: 0px;
+    }
+
+}
+@media screen and (max-width:862px) {
+    #bar2{
+        /* width: 800px; */
+        margin: 0px;
+        position: fixed;
+    }
+    .upbar{
+        /* margin: 0px; */
+        /* position: fixed; */
+    }
+}
+@media screen and (max-width:816px) {
+    .inp{
+        height: 20px;
+        font-size: 10px;
+    }
+    .ht{
+        font-size: 10px;
+    }
+    .content h1{
+        font-size: 20px;
+    }
+    #bar{
+        /* background-color: aqua; */
+       padding-left: 0px;
+    }
+    #bar2{
+        padding-left: 0px;
+    }
+
+    .h{
+        /* background-color: blue; */
+        padding-left:0px ;
+        font-size: 13px;
+    }
+    #sr{
+        padding-left: 9px;
+    }
+}
+@media screen and (max-width:780px) {
+    #bar2{
+        /* width: 750px; */
+    }
+    #bar{
+        padding-left: 0px;
+        /* background-color: aqua; */
+    }
+    #bbb{
+        /* background-color: brown; */
+    } 
+    #sff{
+        left: 0%;
+    }  
+    .h{
+        /* background-color: green; */
+    }   
+}
+@media screen and (max-width:732px) {
+    #bar2{
+        /* width: 700px; */
+    }
+}
+@media screen and (max-width:688px) {
+    #bar{
+        font-size: 10px;
+    }
+    #bar2{
+        font-size: 10px;
+        /* width: 650px; */
+    }
+}
+@media screen and (max-width:638px){
+    .sp{
+        display: none;
+    }
+    .t{
+        margin-left: 0px;
+    }
+    .h{
+        margin: 2px;
+    }
+    .inp{
+        width: 80px;
+    }
+    #bar2{
+        /* width: 620px; */
+    }
+}
+@media screen and (max-width:614px) {
+    #bar2{
+        /* width: 590px; */
+    }
+}
+@media screen and (max-width:584px) {
+    #bar2{
+        /* width: 570px; */
+    }
+    .hw{
+        display: none;
+    }
+    .inp{
+        width: 65px;
+    }
+}
+
